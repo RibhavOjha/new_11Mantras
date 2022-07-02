@@ -15,7 +15,7 @@ class Navbar extends Component {
     render() { 
         return (
             <React.Fragment>
-                < nav class='navbar navbar-expand-lg navbar-light bg-light'>
+                < nav class='navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light bg-light' role='navigation'>
                     <a className='navbar-brand' href='#top'>11 Mantras</a>
                     <div class='collapse navbar-collapse' id="navbarSupportedContent">
                         <ul class='navbar-nav mr-auto'>
