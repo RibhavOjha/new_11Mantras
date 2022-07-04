@@ -1,0 +1,26 @@
+
+.Navbar .MobileNav{
+    display: none
+}
+
+
+/* .Navbar a:hover{
+    border-bottom: purple;
+} */
+@media (max-width: 1000px){
+    .Navbar .DesktopNav{
+        display: none;
+    }
+
+    .Navbar  .MobileNav{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .Navbar .Hamburger{
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+}
