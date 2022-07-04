@@ -1,23 +1,32 @@
 import React  from 'react';
 import classes from './cssNav.module.css'
+import {motion} from 'framer-motion'
 
 const NavLinks = () => {
+
+    const animateFrom = {opacity: 0, y: -40}
+    const animateTo = {opacity: 1, y:0}
      
    
         return (
             <div className={classes.NavLinks}>
             <nav className={classes.NavLinks}>
                 <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href='#top'> About </a></li>
-                    <li class='nav-item dropdown'>
+                    <motion.li 
+                    initial={animateFrom }
+                    animate={animateTo}><a href="#top">Home</a></motion.li>
+                    <motion.li initial={animateFrom }
+                    animate={animateTo}><a href='#top'> About </a></motion.li>
+                    <motion.li initial={animateFrom }
+                    animate={animateTo} class='nav-item dropdown'>
                         <a class='nav-link dropdown-toggle' type = ' button' href='#top' id="navbarDropdown" data-toggle='dropdown' >Our Services</a>
                         <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
                             <a class='dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} }> Services</a>
                             <a class='dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} }> Services Full Page</a>
                         </div>
-                    </li>
-                    <li class='nav-item dropdown'>
+                    </motion.li>
+                    <motion.li initial={animateFrom }
+                    animate={animateTo} class='nav-item dropdown'>
                         <a class='nav-link dropdown-toggle' role='button' href='#top' id="navbarDropdown" data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> Forecast </a>
                         <div class='dropdown-menu' href='#top' id='dropdownMenu' aria-labelledby='navbarDropdown'>
                             <a class='dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} } > Aries</a>
@@ -33,17 +42,19 @@ const NavLinks = () => {
                             <a class='dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} }> Aquarious</a>
                             <a class='dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} }> Pisces</a>
                         </div>
-                    </li>
-                    <li class='nav-item dropdown'>
+                    </motion.li>
+                    <motion.li initial={animateFrom }
+                    animate={animateTo} class='nav-item dropdown'>
                         <a class='nav-link dropdown-toggle' role='button' href='#top' id="navbarDropdown" data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> Pages </a>
                         <div class='dropdown-menu' id='dropdownMenu' aria-labelledby='navbarDropdown'>
                             <a class='dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} } > Shop</a>
                             <a class = 'dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} }> Action</a>
                             
                         </div>
-                    </li>
+                    </motion.li>
                     
-                    <li class='nav-item dropdown'>
+                    <motion.li initial={animateFrom }
+                    animate={animateTo} class='nav-item dropdown'>
                         <a class='nav-link dropdown-toggle'  href='#top' data-toggle='dropdown'  aria-expanded='false'>Blog</a>
                         <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
                             <a class='dropdown-item' href='#top' style={{color:'black', fontSize:'1rem'}}> Blog Grid</a>
@@ -52,10 +63,12 @@ const NavLinks = () => {
                             <a class='dropdown-item' href='#top' style={{color:'black', fontSize:'1rem'}}> Blog Details</a>
 
                         </div>
-                    </li>
+                    </motion.li>
 
-                    <li><a href='#top'> Contact</a></li>
-                    <li> <button style={{backgroundColor:'orange', borderColor:'orange'}}> Appointment</button></li>
+                    <motion.li initial={animateFrom }
+                    animate={animateTo}><a href='#top'> Contact</a></motion.li>
+                    <motion.li initial={animateFrom }
+                    animate={animateTo}> <button style={{backgroundColor:'orange', borderColor:'orange'}}> Appointment</button></motion.li>
 
                 </ul>
             
