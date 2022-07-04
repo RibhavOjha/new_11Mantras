@@ -1,7 +1,7 @@
 import React  from 'react';
 import classes from './cssNav.module.css'
 import {motion} from 'framer-motion'
-import vid from './videos/video.mp4'
+// import vid from './videos/video.mp4'
 
 const NavLinks = () => {
 
