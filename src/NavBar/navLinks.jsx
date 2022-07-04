@@ -1,6 +1,7 @@
 import React  from 'react';
 import classes from './cssNav.module.css'
 import {motion} from 'framer-motion'
+import vid from './videos/video.mp4'
 
 const NavLinks = () => {
 
@@ -12,6 +13,14 @@ const NavLinks = () => {
             <div className={classes.NavLinks}>
             <nav className={classes.NavLinks}>
                 <ul>
+                    {/* <li>
+                    <div class="video-container">
+                        <video autoplay loop muted>
+                            <source src={vid} type="video/mp4"/>
+                        </video>
+                        <p>Astrology Mantras</p>
+                    </div>
+                    </li> */}
                     <motion.li 
                     initial={animateFrom }
                     animate={animateTo}><a href="#top">Home</a></motion.li>
@@ -19,7 +28,10 @@ const NavLinks = () => {
                     animate={animateTo}><a href='#top'> About </a></motion.li>
                     <motion.li initial={animateFrom }
                     animate={animateTo} class='nav-item dropdown'>
-                        <a class='nav-link dropdown-toggle' type = ' button' href='#top' id="navbarDropdown" data-toggle='dropdown' >Our Services</a>
+                        <a class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown">Services</a>
                         <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
                             <a class='dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} }> Services</a>
                             <a class='dropdown-item' href='#top' style= {{color:'black', fontSize:'1rem'} }> Services Full Page</a>

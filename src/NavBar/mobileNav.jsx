@@ -8,13 +8,19 @@ import {useState} from 'react'
 
 const MobileNav = () => {    
     const [open, setOpen] = useState(false);
+
+    const hamburgerMenu = <CgMenuRound className={classes.Hamburger} size='40px' onClick={ 
+        () => setOpen(!open) }/> 
+    
+    const crossMenu = <CgCloseO className={classes.Hamburger} size='40px' onClick={ 
+        () => setOpen(!open) 
+    } />
+    
+
     return (
         <nav className={classes.MobileNav}>
-            { !open ?<CgMenuRound className={classes.Hamburger} size='40px' onClick={ 
-                () => setOpen(!open)
-            }/> : <CgCloseO className={classes.Hamburger} size='40px' onClick={ 
-                () => setOpen(!open)
-            }/>}
+            { !open ? hamburgerMenu
+           : crossMenu}
             
             {open && <NavLinks/>}
             
