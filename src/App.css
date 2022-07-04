@@ -25,8 +25,8 @@ owl-carousel .owl-prev.disabled,
 }
 /* previous nav button */
 .owl-carousel .owl-prev {
-  left: 350px;
-  margin-bottom: 50px;
+  left: -35px;
+  /* margin-bottom: 5px; */
   
 }
 
@@ -39,10 +39,10 @@ owl-carousel .owl-prev.disabled,
 .containerClient {
   width: 350px;
   /* border: 15px solid orange; */
-  padding: 0  px;
-  margin-left: 50px;
+  /* padding: 0; */
+  /* margin-left: 50px; */
   background-color: white;
-  z-index: 2;
+  /* z-index: 2; */
   text-align: center;
   padding: 10px 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
