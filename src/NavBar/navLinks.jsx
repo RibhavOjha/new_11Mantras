@@ -29,7 +29,7 @@ const NavLinks = () => {
                     <motion.li initial={animateFrom }
                     animate={animateTo} class='nav-item dropdown'>
                         <a class="nav-link dropdown-toggle"
-                                        href="#"
+                                        href="#top"
                                         role="button"
                                         data-bs-toggle="dropdown">Services</a>
                         <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
