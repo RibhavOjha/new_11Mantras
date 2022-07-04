@@ -6,12 +6,10 @@ const NavLinks = () => {
    
         return (
             <div className={classes.NavLinks}>
-            < nav class='navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light bg-light' role='navigation'>
-            <a className='navbar-brand' href='#top'>11 Mantras</a>
-            <div class='navbar navbar-default navbar-fixed-top' id="navbarSupportedContent">
-                <ul class='navbar-nav mr-auto'> 
-                    <li class='nav-item'><a class='nav-link' href='#top'> Home</a></li>
-                    <li class='nav-item'><a class='nav-link' href='#top'>About Us</a></li>
+            <nav className={classes.NavLinks}>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href='#top'> About </a></li>
                     <li class='nav-item dropdown'>
                         <a class='nav-link dropdown-toggle' type = ' button' href='#top' id="navbarDropdown" data-toggle='dropdown' >Our Services</a>
                         <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
@@ -55,44 +53,11 @@ const NavLinks = () => {
 
                         </div>
                     </li>
-                    
-                    <li class='nav-item'>
-                        <a class='nav-link' href='#top' > Contact </a>  
-                    </li>
-                   
-                   
-                    
-                    <li class='nav-item'>
-                    {/* <Badge color="primary"> */}
-                {/* <button><ShoppingCartIcon/></button> */}
-                {/* </Badge> */}
-                </li>
-                
-            <li class='nav-item'>
-            {/* <Badge color="primary"> */}
-            {/* <button><SearchIcon/></button> */}
-            {/* </Badge> */}
-            </li>
-            {/* <li class='nav-item'> */}
-                {/* <button style={{backgroundColor:'Orange', color:'White', padding:'15px 32px'}}>Appointment</button> */}
-            {/* </li> */}
-                    {/* <a className='nav-link' href='#top'> About Us</a> */}
-                    
+
+                    <li><a href='#top'> Contact</a></li>
+                    <li> <button style={{backgroundColor:'orange', borderColor:'orange'}}> Appointment</button></li>
+
                 </ul>
-                {/* <button style={{borderColor:'white', marginRight:'40px'}}><ShoppingCartIcon/></button>
-                <button style={{borderColor:'white',marginRight:'25px'}}><SearchIcon/></button> */}
-                <button style={{backgroundColor:'Orange', color:'White', padding:'15px 32px', borderColor:'white', marginRight:'2px'}}>Appointment</button>
-
-                {/* <li class='nav-item'>
-                   <i class="bi bi-cart"></i>
-                   </li> */}
-
-
-            </div>
-            {/* <ButtonGroup> */}
-
-            
-            {/* </ButtonGroup> */}
             
         </nav>
         </div>

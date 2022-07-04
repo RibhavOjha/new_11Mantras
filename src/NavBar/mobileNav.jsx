@@ -10,9 +10,9 @@ const MobileNav = () => {
     const [open, setOpen] = useState(false);
     return (
         <nav className={classes.MobileNav}>
-            { !open ?<CgMenuRound className={classes.Hamburger} size='60px' onClick={ 
+            { !open ?<CgMenuRound className={classes.Hamburger} size='40px' onClick={ 
                 () => setOpen(!open)
-            }/> : <CgCloseO className={classes.Hamburger} size='60px' onClick={ 
+            }/> : <CgCloseO className={classes.Hamburger} size='40px' onClick={ 
                 () => setOpen(!open)
             }/>}
             
